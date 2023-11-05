@@ -1,0 +1,117 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(66, 66, 66);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header nav{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+header ul{
+    display:flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 20px;
+}
+header li{
+    margin-left: 10px;
+}
+.header_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    font-size: medium;
+    color: grey;
+}
+
+.main_titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main_principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;/* 
+    margin-left: 10%;
+    margin-right: 10%; */
+    border: 1px solid red;
+}
+.main_box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    padding: 5px;
+    
+    border: 1px solid greenyellow
+}
+.main_img_carro{
+    max-width: 300px;
+}
+
+@media screen and (max-width: 670px) {
+    .main_box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 350px;
+        width: 350px;
+        padding: 5px;
+        
+        border: 1px solid greenyellow
+    }
+    .main_img_carro{
+        max-width: 350px;
+    }
+    header{
+        background-color: rgb(66, 66, 66);
+        height: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    
+    header ul{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    header li{
+        text-align: center;
+        width: 100px;
+        margin: 3px;
+        background-color: rgb(118, 118, 118);
+    }
+    .header_logo{
+        width: 100px;
+        margin-left: 30px;
+        border: 1px solid red;
+        font-size: 30px;
+    }
+
+}
